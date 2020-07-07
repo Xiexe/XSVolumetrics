@@ -79,7 +79,7 @@
 				col *= fade;
 				col *= depthFade;
 				col *= distFade;
-				UNITY_APPLY_FOG(i.fogCoord, col);
+				UNITY_APPLY_FOG_COLOR(i.fogCoord, col, fixed4(0,0,0,0));
 				return col * _Color;
 			}
 			ENDCG
